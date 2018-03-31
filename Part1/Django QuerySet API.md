@@ -56,4 +56,10 @@
 
 !> 注意事项：
 
-!> 如果只是检查 Person 中是否有对象，应该用 Person.objects.all().exists()
+> 如果只是检查 Person 中是否有对象，应该用 Person.objects.all().exists()
+> 
+> 用 len(person) 可以得到Person的数量，但是推荐用 Person.objects.count()来查询数量，后者用的是SQL：SELECT COUNT(*)
+> 
+>  list(person) 可以强行将 QuerySet 变成 列表
+> 
+> QuerySet 重复的问题，使用`distinct()`去重
