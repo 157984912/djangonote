@@ -1,7 +1,7 @@
 * Django 基础
 
     * [Django 基本命令](Part1/Django 基本命令.md)
-    * [Django 基本命令](Part1/Django urls.md)
+    * [Django urls](Part1/Django urls.md)
 
 * Django 进阶
 
