@@ -1,10 +1,7 @@
 # 基本命令
 
 1. 开始一个django project
-   ```python
    django-admin startproject project_name
-   ```
-
 2. 新建一个django app
    ```python
    进入project目录:cd project_name
