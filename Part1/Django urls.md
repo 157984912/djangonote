@@ -13,7 +13,7 @@ urlpatterns = [
     path('mini/', include('mini.urls')),
     path('login/', app01_views.acc_login),
     path('logout/', app01_views.acc_logout, name="logout"),
-    # Django2.0前后有差别，name为别名，可以在模版中使用{% url "add"%}
+    # Django2.0前后有差别，name为别名，可以在模版中使用{% url "add" 参数1 参数2%}
     path(r'^add/(\d+)/(\d+)/$', app01_views.add2, name='add'),
     path('add/<int:a>/<int:b>/', app01_views.add, name='add'),
 ]
