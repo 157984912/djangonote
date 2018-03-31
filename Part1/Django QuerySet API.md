@@ -55,4 +55,5 @@
 6. QuerySet 是可迭代的，可for循环
 
 !> 注意事项：
+!> 
 !> 如果只是检查 Person 中是否有对象，应该用 Person.objects.all().exists()
