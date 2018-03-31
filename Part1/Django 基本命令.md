@@ -9,11 +9,12 @@
    ```python
    进入project目录:cd project_name
    python manage.py startapp app_name
+   注意：django项目至少要包含一个应用
    ```
 
 3. 创建models并同步数据库
    ```python
-   # 创建更改的文件
+   # 生成数据库同步文件
    python manage.py makemigrations
    # 同步数据库
    python manage.py migrate
@@ -54,5 +55,10 @@
    ```
 8. 其他命令
    ```python
-   python manage.py
+   # 检查django项目完整性
+   python manage.py check
+   #查看数据库同步的sql语句
+   python manage.py sqlmigrate
+
+   更多执行python manage.py查看
    ```
