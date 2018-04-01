@@ -72,3 +72,17 @@ Person.objects.filter(name__contains='abc').update(name="ABC")
 > list(person) 可以强行将 QuerySet 变成 列表
 >
 > QuerySet 重复的问题，使用`distinct()`去重
+
+> Author.objects.all() #结果为QuerySet
+>
+> Author.objects.values_list('name', 'qq') #结果为元组
+>
+> Author.objects.values('name', 'qq') #结果为字典
+
+!> **注意**
+
+> values_list 和 values 返回的并不是真正的 列表 或 字典，也是 queryset，他们也是 lazy evaluation 的（惰性评估，通俗地说，就是用的时候才真正的去数据库查）
+>
+>  如果查询后没有使用，在数据库更新后再使用，你发现得到在是新内容！！！如果想要旧内容保持着，数据库更新后不要变，可以 list 一下
+>
+> 如果只是遍历这些结果，没有必要 list 它们转成列表（浪费内存，数据量大的时候要更谨慎！！！）
