@@ -19,5 +19,7 @@ urlpatterns = [
 ]
 ```
 > 模板中使用生成URL {% url 'add' 2012 %}
+> 
 > 函数中使用生成URL reverse('add', args=(2012,)) 路径:django.urls.reverse
+> 
 > Model中使用获取URL 自定义get_absolute_url()方法
