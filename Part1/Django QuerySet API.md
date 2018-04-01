@@ -73,6 +73,7 @@ Person.objects.filter(name__contains='abc').update(name="ABC")
 >
 > QuerySet 重复的问题，使用`distinct()`去重
 
+
 > Author.objects.all() #结果为QuerySet
 >
 > Author.objects.values_list('name', 'qq') #结果为元组
