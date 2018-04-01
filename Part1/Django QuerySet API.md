@@ -54,7 +54,7 @@
 5. get_or_create()和update_or_create()会先检查数据是否存在，速度会慢一点点
 6. QuerySet 是可迭代的，可for循环
 
-!> 注意事项：
+!> **注意事项：**
 
 > 如果只是检查 Person 中是否有对象，应该用 Person.objects.all().exists()
 > 
